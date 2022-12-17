@@ -1,0 +1,1 @@
+.NET Core version of ProjectEarth Launcher
