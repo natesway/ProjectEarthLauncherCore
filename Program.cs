@@ -783,10 +783,10 @@ namespace ProjectEarthLauncherCore
 
             string[] files = Directory.GetFiles(from);
             for (int i = 0; i < files.Length; i++)
-                File.Move(files[i], to + "\\" + Path.GetFileName(files[i]));
+                File.Move(files[i], to + "/" + Path.GetFileName(files[i]));
             string[] dirs = Directory.GetDirectories(from);
             for (int i = 0; i < dirs.Length; i++)
-                Directory.Move(dirs[i], to + "\\" + Path.GetFileName(dirs[i]));
+                Directory.Move(dirs[i], to + "/" + Path.GetFileName(dirs[i]));
 
             Directory.Delete(from);
 
